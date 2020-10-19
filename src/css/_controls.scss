@@ -89,7 +89,7 @@
   }
 
   .read-aloud {
-    display: flex;
+    display: none;
     position: absolute;
     bottom: -80px;
     right: 0;
@@ -103,6 +103,9 @@
     transition: bottom .25s linear;
     background: $controlsBG;
     &.visible {
+      display: flex;
+    }
+    &.animate {
       bottom: 100%;
     }
 
